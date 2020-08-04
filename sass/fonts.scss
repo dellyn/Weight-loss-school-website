@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic');
+
+@font-face {
+  font-family: 'prosto_sans_italic';
+  src: url('../fonts/tt_prosto_sans_light_italic-webfont.woff2') format('woff2'),
+  url('../fonts/tt_prosto_sans_light_italic-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'prosto_sans';
+  src: url('../fonts/tt_prosto_sans_regular-webfont.woff2') format('woff2'),
+  url('../fonts/tt_prosto_sans_regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'prosto_sans';
+  src: url('../fonts/ofont.ru_prosto_sans-webfont.woff2') format('woff2'),
+  url('../fonts/ofont.ru_prosto_sans-webfont.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'akrobat';
+  src: url('../fonts/akrobatblack-webfont.woff2') format('woff2'),
+  url('../fonts/akrobatblack-webfont.woff') format('woff');
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'akrobat';
+  src: url('../fonts/akrobatbold-webfont.woff2') format('woff2'),
+  url('../fonts/akrobatbold-webfont.woff') format('woff');
+  font-display: swap;
+}
+
+
+
+
+@font-face {
+    font-family: 'Coco Gothic';
+    src: url('CocoGothic-Bold.eot');
+    src: url('CocoGothic-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CocoGothic-Bold.woff2') format('woff2'),
+        url('CocoGothic-Bold.woff') format('woff'),
+        url('CocoGothic-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+

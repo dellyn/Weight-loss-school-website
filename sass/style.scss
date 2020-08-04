@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+@import "normalize";
+@import "variables";
+@import "fonts";
+@import "mixins";
+@import "core";
+
+@import "blocks/top-menu";
+@import "blocks/socials";
+@import "blocks/first-screen";
+@import "blocks/history";
+@import "blocks/programm";
+@import "blocks/diagramm";
+@import "blocks/steps";
+@import "blocks/author";
+@import "blocks/results";
+@import "blocks/form";
+@import "blocks/faq";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/form-modal";

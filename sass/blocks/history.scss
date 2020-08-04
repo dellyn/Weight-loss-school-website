@@ -1,0 +1,209 @@
+.history {
+  background-image: linear-gradient(to top, #fbcad7 0%, #fbeae4 97%, #fbeae4 100%);
+  position: relative;
+  margin-top: 0px;
+  padding-top: 125px;
+  &__wrap {
+    position: relative;
+    padding-bottom: 20px;
+    z-index: 1;
+
+  }
+  &__info {
+
+    &::after {
+      width: 544px;
+      height: 851px;
+      background: url("../img/woman.png");
+      background-size: cover;
+      content: "";
+      position: absolute;
+      right: 0px;
+      bottom: 0;
+      z-index: 1;
+    }
+    &::before {
+
+    }
+  }
+  &__title {
+    color: #f95074;
+    font-size: px-to-rem(30px);
+    line-height: px-to-rem(40px);
+    letter-spacing: px-to-rem(1.5px);
+    font-family: "Segoe UI";
+    font-weight: bold;
+    color: #fc2f5a;
+    text-transform: none;
+    margin-top: 50px;
+    margin-bottom: 0;
+    z-index: 1;
+  }
+  &__subtitle {
+    font-size: px-to-rem(24px);
+    line-height: px-to-rem(40px);
+    letter-spacing: px-to-rem(2.4px);
+    text-transform: none;
+    font-weight: 400;
+    font-family: "TT Prosto Sans";
+    color: #37292c;
+    margin-top: 15px;
+  }
+  &__layer{
+    width: 40%;
+    background-image: linear-gradient(to left, #ffa8bf 0%, #fbcad7 100%);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    z-index: 0;
+  }
+  &__list {
+    padding-left: 0;
+    width: 671px;
+    li {
+      display: flex;
+      align-items: center;
+      align-items: center;
+      font-size: px-to-rem(18px);
+      line-height: px-to-rem(26px);
+      letter-spacing: px-to-rem(0.9px);
+      text-transform: none;
+      font-family: 'prosto_sans';
+      margin: 30px 0;
+      color: #34292b;
+
+      > span {
+        background-color: #ffb4a4;
+        width: 100px;
+        height: 100px;
+        flex-shrink: 0;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        font-size: px-to-rem(30px);
+        line-height: px-to-rem(40px);
+        font-weight: 700;
+        position: relative;
+        z-index: 1;
+        margin-right: 20px;
+
+        &::after {
+          background-color: #ffb4a4;
+          width: 80px;
+          height: 80px;
+          border: 2px solid $white;
+          border-radius: 50%;
+          content: "";
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          z-index: -1;
+        }
+      }
+    }
+    p {
+      span {
+        font-size: px-to-rem(22px);
+        color: #34292b;
+      }
+    }
+  }
+}
+@media (max-width: 1510px) {
+
+  .history {
+    &__info::after {
+      right: 10px;
+      width: 360px;
+      height: 550px;
+      display: block;
+    }
+    &__info {
+      margin: 0 auto;
+    }
+    &__list{
+      width: 68%;
+    }
+  }
+}
+
+@media (max-width: 1030px) {
+.history {
+  &__info::after {
+    display: none;
+  }
+}
+}
+@media (max-width: 980px) {
+  .history {
+    &__list{
+      width: 98%;
+    }
+    &__info {
+      margin-left: 0;
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .history {
+    padding-top: 30px;
+    &__list {
+      width: 100%;
+      li {
+        font-size: px-to-rem(16px);
+      }
+    }
+    &__title {
+      font-size: px-to-rem(22px);
+    }
+    &__subtitle {
+      font-size: px-to-rem(26px);
+    }
+  }
+}
+
+@media (max-width: 580px) {
+  h2{
+    text-align: center;
+  }
+  .programm__slogan{
+    width: 100%;
+  }
+  .history {
+    &__subtitle{
+      font-size: 1.125rem;
+    }
+    &__list {
+      li {
+        font-size: px-to-rem(16px);
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+
+  .history {
+    &__list {
+      li {
+        margin: 0 auto;
+        text-align: center;
+        flex-direction: column;
+        > span {
+          flex-shrink: 1;
+          flex-basis: auto;
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

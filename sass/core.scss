@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/**
+ * Основные стили
+ **/
+
+html {
+  font-size: 16px;
+  color: $black;
+}
+
+body {
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.container {
+  @include min-max(320px, 100%, 0);
+  max-width: 1920px;
+}
+
+.wrap {
+  @include min-max(320px, 1160px, 15px);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  border-radius: 30px;
+  background-color: $menu-text-active;
+  display: block;
+  width: 285px;
+  text-decoration: none;
+  font-size: px-to-rem(18px);
+  line-height: px-to-rem(24px);
+  padding-top: 22px;
+  padding-bottom: 22px;
+  font-family: 'prosto_sans';
+  text-align: center;
+  margin: 25px 0;
+  color: $white;
+  letter-spacing: 0.9px;
+  font-weight: 400;
+  box-shadow: 2px 6px 0 0 #f07d9d;
+  cursor: pointer;
+  border: none;
+  transition-duration: 500ms;
+  transition-property: background-color, box-shadow;
+  &:hover {
+    background-color: darken($menu-text-active, 10%);
+    box-shadow: 2px 6px 0 0 darken(#f07d9d, 5%);
+  }
+}
+
+.hidden-scroll {
+  //height: 100%;
+  //width: 100%;
+  //position: fixed;
+  overflow: hidden;
+}
+
+.input-err {
+  border: 1px solid #f00 !important;
+}
+
+.response-site {
+  text-align: center;
+}

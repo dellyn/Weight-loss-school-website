@@ -1,0 +1,124 @@
+.author {
+//background: #fafafa;
+  &__wrap {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 1350px;
+  }
+  &__info {
+    margin-left: 590px;
+    /*width: 676px; */
+    margin-bottom: 80px;
+    background: url("../img/chicken.png") 40% bottom no-repeat,
+                url("../img/vegetables.png") center top no-repeat,
+                url("../img/cakes.png") right center no-repeat;
+    &::after {
+      content: "";
+      background: url("../img/author.png") no-repeat; 
+      background-size: 100%;
+      width: 420px;
+      height: 560px;
+      position: absolute;
+      left: 60px;
+      bottom: 0;
+    }
+    &::before {
+      content: "";
+      height: 100%;
+      background-image: linear-gradient(to bottom, #fcdcd6 0%, #fe8392 100%);
+      width: 533px;
+      position: absolute;
+      z-index: -2;
+      left: 0;
+      top: 0;
+    }
+  }
+  p {
+    font-size: px-to-rem(16px);
+    line-height: px-to-rem(26px);
+    letter-spacing: px-to-rem(0.9px);
+    margin: 15px 0;
+    font-family: 'prosto_sans';
+  }
+  &__title {
+    font-size: px-to-rem(30px);
+    line-height: px-to-rem(40px);
+    letter-spacing: px-to-rem(1.5px);
+    font-family: 'prosto_sans';
+    font-weight: 400;
+    color: #fc2f5a;
+    margin-bottom: 20px;
+    margin-top: 114px;  
+  }
+  .author__name {
+    font-size: px-to-rem(24px);
+    line-height: px-to-rem(30px);
+    letter-spacing: px-to-rem(1.2px);
+    color: #03b503;
+    margin-bottom: 10px;
+    text-transform: none; 
+    font-weight: 700; 
+    font-family: Akrobat;
+
+  }
+  .author__post {
+    font-size: px-to-rem(18px);
+    line-height: px-to-rem(30px);
+    letter-spacing: px-to-rem(0.9px);
+    font-family: 'prosto_sans';
+    text-transform: none;
+    font-weight: 400; 
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+  &__more {
+    text-align: right;
+    a {
+      font-size: px-to-rem(16px);
+      line-height: px-to-rem(20px);
+      text-decoration: none;
+      font-family: 'prosto_sans';
+      font-weight: 300;
+      font-style: italic;
+      color: #37292c;
+      border-bottom: 1px solid #37292c;
+      &:hover {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .author {
+    &__info {
+      /*width: 100%;*/
+      margin-left: 400px;
+      &::after {
+        left: 30px;
+        width: 370px;
+        height: 493px;
+
+      }
+      &::before {
+        width: 390px;
+        left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 980px) {
+  .author {
+    &__wrap {
+      padding: 30px 15px;
+    }
+    &__info {
+      margin-left: 0;
+      &::after, &::before {
+        display: none;
+      }
+    }
+  }
+}
